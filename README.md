@@ -7,14 +7,14 @@ To simplify, I have to create an application takes data from two different servi
 
 ### Constraints
 The constraints in this project are the technologies that need to be used. The following constraints have been set for this project:
-•	Trello for project management (Kanban Board)
-•	Version Control: Git
-•	CI Server: Jenkins
-•	Configuration Management: Ansible
-•	Using GCP as Cloud Provider
-•	Containerisation: Docker
-•	Orchestration Tool: Docker Swarm
-•	Reverse Proxy: NGINX
+* Trello for project management (Kanban Board)
+*	Version Control: Git
+*	CI Server: Jenkins
+*	Configuration Management: Ansible
+*	Using GCP as Cloud Provider
+*	Containerisation: Docker
+*	Orchestration Tool: Docker Swarm
+*	Reverse Proxy: NGINX
 
 ### What I plan to create
 The app I plan to create will be split into 4 services. The frontend will be service 1. This is what the user will see and where the ‘Objects’ are displayed. Service 2 will be a list of numbers, just like in a raffle where entrants are given a number for a prize draw. Service 3 will be a list of random prizes. Random numbers and prizes from services 2 & 3 will generate the ‘Object’ shown on the frontend, e.g., number 5 wins an iPad. And finally service 4 will also create an ‘Object’ using predefines rules based on the results of service 2 + 3.
