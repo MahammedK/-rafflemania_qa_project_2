@@ -5,6 +5,19 @@ Create an application that generates ‘Objects’ upon a set of predefined rule
 
 To simplify, I have to create an application takes data from two different services and generates an ‘Object’. I have complete freedom in the application I decide to create.
 
+### Contents
+* [Constraints](#contraints)
+* [What I plan to create](#what-i-plan-to-create)
+* [User Stories, Acceptance Criteria &amp; Story Points](#user-stories,-acceptance-criteria-&-story-points)
+* [ERD](erd)
+* [Project Management - Trello &amp; MVP](#project-management-trello-&-mvp)
+* [Risk Assessment](#risk-assessment)
+* [App - Frontend](#risk-assessment)
+* [Testing and Issues](#testing-and-issues)
+* [Improvements](#improvements)
+* [Authors](#authors)
+* [Acknowledgements](#acknowledgements)
+
 ### Constraints
 The constraints in this project are the technologies that need to be used. The following constraints have been set for this project:
 * Trello for project management (Kanban Board)
@@ -43,7 +56,6 @@ Risk Assessments are used to ensure a project&#39;s success by evaluating scenar
 | Application freezing | Unsaved worked will get lost | Med | High | Mahammed Kassam | Constantly pushing to GitHub | Having backups saved | Clone down latest push to GitHub | 28/04/22 |
 | Using VMs private IP | Private IP will become public knowledge | High | High | Mahammed Kassam | Ensuring public IP is copied | Constantly checking the public IP is being used | Create an entirely new VM | 28/04/22 |
 | Not installing all requirements | Application will not work | High | Low | Mahammed Kassam | When error is thrown up , install all requirements | Have a requirements file, that lists all requirements | Install all requirements from the requirements file | 28/04/22 |
-
 
 ### App – Frontend
 
