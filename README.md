@@ -9,10 +9,10 @@ To simplify, I have to create an application takes data from two different servi
 * [Constraints](#contraints)
 * [What I plan to create](#what-i-plan-to-create)
 * [User Stories, Acceptance Criteria and Story Points](#user-stories-acceptance-criteria-and-story-points)
-* [ERD](erd)
+* [ERD](#erd)
 * [Project Management - Trello and MVP](#project-management-trello-and-mvp)
 * [Risk Assessment](#risk-assessment)
-* [App - Frontend](#app-frontend)
+* [Frontend](#frontend)
 * [Testing and Issues](#testing-and-issues)
 * [Improvements](#improvements)
 * [Authors](#authors)
@@ -56,6 +56,7 @@ Risk Assessments are used to ensure a project&#39;s success by evaluating scenar
 | Application freezing | Unsaved worked will get lost | Med | High | Mahammed Kassam | Constantly pushing to GitHub | Having backups saved | Clone down latest push to GitHub | 28/04/22 |
 | Using VMs private IP | Private IP will become public knowledge | High | High | Mahammed Kassam | Ensuring public IP is copied | Constantly checking the public IP is being used | Create an entirely new VM | 28/04/22 |
 | Not installing all requirements | Application will not work | High | Low | Mahammed Kassam | When error is thrown up , install all requirements | Have a requirements file, that lists all requirements | Install all requirements from the requirements file | 28/04/22 |
+| No relevant firewall rules | There will be no accessing the application | Low | High | Mahammed Kassam | Ensure all firewall rules are in place | Before creating application, know what firewall rules are needed | Add correct firewall rules to VM | 29/04/22 |
 
 ### App – Frontend
 
