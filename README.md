@@ -39,11 +39,11 @@ The app I plan to create will be split into 4 services. The frontend will be ser
 | 3 |  Other half of the object (List of prizes) | 
 | 4 |  ‘Object’ created from results of service 2 + 3 |
 
-### User Stories, Acceptance Criteria &amp; Story Points
+### User Stories, Acceptance Criteria and Story Points
 
 ### ERD
 
-### Project Management – Trello &amp; MVP
+### Project Management – Trello and MVP
 
 ### Risk Assessment
 
@@ -58,7 +58,7 @@ Risk Assessments are used to ensure a project&#39;s success by evaluating scenar
 | Not installing all requirements | Application will not work | High | Low | Mahammed Kassam | When error is thrown up , install all requirements | Have a requirements file, that lists all requirements | Install all requirements from the requirements file | 28/04/22 |
 | No relevant firewall rules | There will be no accessing the application | Low | High | Mahammed Kassam | Ensure all firewall rules are in place | Before creating application, know what firewall rules are needed | Add correct firewall rules to VM | 29/04/22 |
 
-### App – Frontend
+### Frontend
 
 ### Testing and Issues
 
