@@ -1,10 +1,10 @@
 FROM python:3.8.10
 
-WORKDIR /service_1
-
-COPY . .
+WORKDIR /service_3
 
 RUN pip3 install -r requirements.txt
+
+COPY app.py .
 
 EXPOSE 5000
 
