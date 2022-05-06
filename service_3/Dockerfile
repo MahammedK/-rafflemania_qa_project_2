@@ -1,10 +1,10 @@
-FROM python:3.8.10
+FROM python:3.8
 
 WORKDIR /service_3
 
-RUN pip3 install -r requirements.txt
+COPY . .
 
-COPY app.py .
+RUN pip3 install -r requirements.txt
 
 EXPOSE 5000
 
