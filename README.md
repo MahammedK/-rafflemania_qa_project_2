@@ -9,7 +9,6 @@ To simplify, I have to create an application takes data from two different servi
 * [Constraints](#contraints)
 * [What I plan to create](#what-i-plan-to-create)
 * [User Stories, Acceptance Criteria and Story Points](#user-stories-acceptance-criteria-and-story-points)
-* [ERD](#erd)
 * [Project Management - Trello and MVP](#project-management-trello-and-mvp)
 * [Risk Assessment](#risk-assessment)
 * [Frontend](#frontend)
@@ -30,18 +29,16 @@ The constraints in this project are the technologies that need to be used. The f
 *	Reverse Proxy: NGINX
 
 ### What I plan to create
-The app I plan to create will be split into 4 services. The frontend will be service 1. This is what the user will see and where the ‘Objects’ are displayed. Service 2 will be a list of numbers, just like in a raffle where entrants are given a number for a prize draw. Service 3 will be a list of random prizes. Random numbers and prizes from services 2 & 3 will generate the ‘Object’ shown on the frontend, e.g., number 5 wins an iPad. And finally service 4 will also create an ‘Object’ using predefines rules based on the results of service 2 + 3.
+The app I plan to create will be split into 4 services. The frontend will be service 1. This is what the user will see and where the ‘Objects’ are displayed. Service 2 will be a list of letters, just like in a raffle where entrants are given a number for a prize draw. Service 3 will be a list of random prizes. Random numbers and prizes from services 2 & 3 will generate the ‘Object’ shown on the frontend, e.g., letter A wins an iPad. And finally service 4 will also create an ‘Object’ using predefines rules based on the results of service 2 + 3.
 
 | Services | Applied on |
 | --- | --- |
 | 1 |  Frontend (Where ‘Objects’ will be displayed) |
-| 2 |  Half of an object (List of numbers) |
+| 2 |  Half of an object (List of letters) |
 | 3 |  Other half of the object (List of prizes) | 
 | 4 |  ‘Object’ created from results of service 2 + 3 |
 
 ### User Stories, Acceptance Criteria and Story Points
-
-### ERD
 
 ### Project Management – Trello and MVP
 
@@ -57,6 +54,8 @@ Risk Assessments are used to ensure a project&#39;s success by evaluating scenar
 | Using VMs private IP | Private IP will become public knowledge | High | High | Mahammed Kassam | Ensuring public IP is copied | Constantly checking the public IP is being used | Create an entirely new VM | 28/04/22 |
 | Not installing all requirements | Application will not work | High | Low | Mahammed Kassam | When error is thrown up , install all requirements | Have a requirements file, that lists all requirements | Install all requirements from the requirements file | 28/04/22 |
 | No relevant firewall rules | There will be no accessing the application | Low | High | Mahammed Kassam | Ensure all firewall rules are in place | Before creating application, know what firewall rules are needed | Add correct firewall rules to VM | 29/04/22 |
+| Constantly adding/removing images/containers | Takes a lot of time | High | Low | Mahammed Kassam | Using up arrow, so no need to type enitre code | Using up arrow, so no need to type enitre code | Ensure all code is correct, which will reduce the amount of times needed to add/removes images/containers | 09/05/22 |
+| Old PC being used | PC will run really slow | High | High | PC | Only use programs/softwares that are needed | Using a PC with a bigger RAM and a better processor | Keep calm | 09/05/22 |
 
 ### Frontend
 
