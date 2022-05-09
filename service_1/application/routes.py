@@ -9,9 +9,7 @@ def home():
 
     fields = {'Letters': letter_drawn, 'Prizes': prize_drawn}
 
-    final_draw = requests.post('http://service_4:5000/secondround', json=fields)  #json=fields
+    final_draw = requests.post('http://service_4:5000/secondround', json=fields) 
 
     raffle_prize = f"Entrant with the raffle letter '{letter_drawn}', gets the prize of '{prize_drawn}', along with '{final_draw.text}'" 
     return render_template('index.html', raffle_prize=raffle_prize)
-
-    # return render_template('main.html', final_draw=final_draw.json())
