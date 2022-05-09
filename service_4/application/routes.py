@@ -1,16 +1,33 @@
 from application import app
 from flask import Flask, request, jsonify, Response
-import requests
-
-extra_prize = {0: "AirPods", 1: "QA CloudAcademy free demo"}
-vowels = "AEIOUaeiou"
+import requests, json
 
 @app.route('/secondround', methods=['POST'])
 def secondround():
-    get_letter = requests.get('service_2')
+    raffle_letters = request.get_json()['Letters']
+    get_prizes = request.get_json()['Prizes']
 
-    for vowels in get_letter:
-        if vowels in get_letter:
-            return Response(f"{extra_prize[0]}", mimetype = 'text/plain')
-        else:
-            return Response(f"{extra_prize[1]}", mimetype = 'text/plain')
+    
+    if raffle_letters=='A':
+        extra_prize = "Airpods"
+
+    elif raffle_letters=='E':
+        extra_prize = "Airpods"
+
+    elif raffle_letters=='I':
+        extra_prize = "Airpods"
+
+    elif raffle_letters=='O':
+        extra_prize = "Airpods"
+
+    elif raffle_letters=='U':
+        extra_prize = "Airpods"
+
+    elif get_prizes.startswith('A'):
+        extra_prize = "Airpods"
+
+    else:
+        extra_prize = "QA CloudAcademy free demo"
+
+    return Response(f"{extra_prize}", mimetype='text/plain')
+

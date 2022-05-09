@@ -1,6 +1,8 @@
+{% extends 'main.html' %}
+
 {% block title %} RaffleMania {% endblock %}
 
 {% block content %}
-<h2>{{ raffle_prize }}</h2>
+<p>{{ raffle_prize }}</p>
 <button onClick="window.location.reload();">Refresh Page</button>
 {% endblock %}
