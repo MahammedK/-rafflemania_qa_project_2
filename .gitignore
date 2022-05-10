@@ -1,0 +1,16 @@
+.venv
+venv/
+venv
+.pytest_cache
+**/__pycache__
+.coverage
+application/data.db
+__pycache__
+service_1/.pytest_cache
+service_1/__pycache__
+service_2/.pytest_cache
+service_2/__pycache__
+service_3/.pytest_cache
+service_3/__pycache__
+service_4/.pytest_cache
+service_4/__pycache__
