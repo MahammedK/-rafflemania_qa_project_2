@@ -9,7 +9,7 @@ pipeline{
 
             stage('Docker-compose'){
                 steps {
-                    sh "ln -s rafflemania_qa_project_2/docker-compose.yaml build"
+                    sh "ln -s rafflemania_qa_project_2/docker-compose.yaml building"
                 }
             }
         }
