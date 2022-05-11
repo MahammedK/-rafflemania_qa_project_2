@@ -12,7 +12,8 @@ To simplify, I have to create an application takes data from two different servi
 * [Project Management - Trello and MVP](#project-management-trello-and-mvp)
 * [Risk Assessment](#risk-assessment)
 * [Frontend](#frontend)
-* [Testing and Issues](#testing-and-issues)
+* [Testing](#testing)
+* [Jenkins](#jenkins)
 * [Improvements](#improvements)
 * [Authors](#authors)
 * [Acknowledgements](#acknowledgements)
@@ -40,6 +41,8 @@ The app I plan to create will be split into 4 services. The frontend will be ser
 
 ### User Stories, Acceptance Criteria and Story Points
 
+To create a vision as to what the application would look like, I used user stories. Being the sole user, the user stories were from my point of view. To understand what a feature requires, an acceptance criterion is attached to the user stories. Story points are a means of calculating how much work it will take to complete a task. PlanningPoker.com is used to decide the story point assigned to a user story. Each user story was given a number depending on complexity using the Fibonacci sequence to calculate the story point.
+
 ### Project Management – Trello and MVP
 
 ### Risk Assessment
@@ -56,15 +59,41 @@ Risk Assessments are used to ensure a project&#39;s success by evaluating scenar
 | No relevant firewall rules | There will be no accessing the application | Low | High | Mahammed Kassam | Ensure all firewall rules are in place | Before creating application, know what firewall rules are needed | Add correct firewall rules to VM | 29/04/22 |
 | Constantly adding/removing images/containers | Takes a lot of time | High | Low | Mahammed Kassam | Using up arrow, so no need to type enitre code | Using up arrow, so no need to type enitre code | Ensure all code is correct, which will reduce the amount of times needed to add/removes images/containers | 09/05/22 |
 | Old PC being used | PC will run really slow | High | High | PC | Only use programs/softwares that are needed | Using a PC with a bigger RAM and a better processor | Keep calm | 09/05/22 |
+| File already existing | Jenkins test failing | High | Low | Mahammed Kassam | Rename file | Create a new file | Rename current file | 11/05/22 |
+| Unsure how to proceed with a task | Time to complete project will be reduced | High | Low | Mahammed Kassam | Start with documentation to give a layout on how to proceed | Same as current control measures - Start with documentation to give a layout on how to proceed | Ask trainer on what they would recommend | 11/05/22 |
 
 ### Frontend
+The frontend consists of just one page, consisting of the navigation bar that has just the home page on it. The rest of the page consists of the title, statement with objects from services and a refresh button.
 
-### Testing and Issues
+Below are screenshots of the frontend, along with different possible outcomes:
+
+1. If service 2 is either 'A, E, I, O, U' or service 3 starts with an 'A'. Service 4 should return 'Airpods'
+    * Service 2 is either 'A, E, I, O, U' and service 3 starts with an 'A'.
+
+    * Service 2 is either 'A, E, I, O, U' and service 3 DOES NOT start with an 'A'.
+
+    * Service 2 IS NOT either 'A, E, I, O, U' and service 3 starts with an 'A'.
+
+2. If service 2 is NOT either 'A, E, I, O, U' or service 3 DOES NOT start with an 'A'. Service 4 should return 'QA CloudAcademy free demo'
+
+### Testing
+
+### Jenkins
 
 ### Improvements
+
+Story Points - 
+A use story has more influence when the users aren't myself. The best/most usual way to use story points is is a collaborative project, because the chosen story points promote discussion, and multiple perspectives may lead to a consensus.
+
+Frontend - 
+The Navigation bar is useless as there is only one webpage for the frontend, it just makes the frontend look presentable. Making the page look presentable without the navbar would have been ideal.
 
 ### Authors
 
 Mahammed Kassam
 
 ### Acknowledgements
+
+Many thanks go to the trainer, Victoria Sacre, for the help, guidance, and patience. The cohort of 22MarEnable1 deserve to be acknowledged for their support and friendly demeanour. Not forgetting Luke Benson, Harry Volker and Adam Gray for being available to answer question and also Earl Gray for the recodings during week 1 through to 5.
+
+Thanks go to getbootstrap for their navbar.
