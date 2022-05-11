@@ -1,5 +1,5 @@
 #!/bin/bash
-pyhton3 -m venv venv
+python3 -m venv venv
 ls -l
 source venv/bin/activate
 declare -a directories=("service_1" "service_2" "service_3" "service_4")
