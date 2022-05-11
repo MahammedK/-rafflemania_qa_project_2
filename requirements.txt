@@ -6,8 +6,7 @@ itsdangerous
 gunicorn
 pytest
 pytest-cov
-flask-testing
-flask-testing
+flask_testing
 requests_mock
 Werkzeug
 selenium
