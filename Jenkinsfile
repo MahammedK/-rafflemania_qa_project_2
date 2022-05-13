@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Testing Services') {
             steps {
-                sh "bash test.sh"
+                sh "bash tests.sh"
             }
         }
         stage('Docker-compose') {
