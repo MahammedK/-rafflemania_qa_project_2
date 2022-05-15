@@ -9,7 +9,8 @@ To simplify, I have to create an application takes data from two different servi
 * [Constraints](#contraints)
 * [What I plan to create](#what-i-plan-to-create)
 * [User Stories, Acceptance Criteria and Story Points](#user-stories-acceptance-criteria-and-story-points)
-* [Project Management - Trello and MVP](#project-management-trello-and-mvp)
+* [CI Pipeline](#ci-pipeline)
+* [Project Management](#project-management)
 * [Risk Assessment](#risk-assessment)
 * [Frontend](#frontend)
 * [Testing](#testing)
@@ -43,7 +44,26 @@ The app I plan to create will be split into 4 services. The frontend will be ser
 
 To create a vision as to what the application would look like, I used user stories. Being the sole user, the user stories were from my point of view. To understand what a feature requires, an acceptance criterion is attached to the user stories. Story points are a means of calculating how much work it will take to complete a task. PlanningPoker.com is used to decide the story point assigned to a user story. Each user story was given a number depending on complexity using the Fibonacci sequence to calculate the story point.
 
-### Project Management – Trello and MVP
+### CI Pipeline
+| CI Pipeline | What was done in this project |
+| --- | --- |
+|  |  |
+|  |  |
+|  |  | 
+|  |  |
+
+### Project Management
+###### Trello and MVP
+
+
+
+The Trello board contains three colours, these represent:
+
+Red – Must Have (MVP – Minimum Viable Product)
+Orange – Should Have
+Yellow - Could Have
+
+This is due to the tasks included only contains tasks that were a necessary part of the project and those that would improve the project in a major way. There is no tasks that represent Won't Have, as the project was completed with tasks that were always to be included. The could have tasks were only left out due to time constraints.
 
 ### Risk Assessment
 
