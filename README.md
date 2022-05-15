@@ -50,12 +50,17 @@ To create a vision as to what the application would look like, I used user stori
 
 ### CI Pipeline
 
+
+
 | CI Pipeline | What was done in this project |
 | --- | --- |
-|  |  |
-|  |  |
-|  |  | 
-|  |  |
+| Project Tracking – Trello | Work is set out and branches/tasks are created on Version Control System. |
+| Version Control System – Git & GitHub | Git – Software on computer that takes snapshots of work done. GitHub – Remote destination that snapshots can be pushed to. |
+| Source Code - Developer | Pulls down latest version of code. Can push up to main branch. | 
+| pytest | Run tests on each route. |
+| Jenkins | Loaded onto a VM in the cloud. GitHub repository link attached to Jenkins in order to build tool. |
+| Ansible | Used to build and push images along with depolying code. |
+| Docker Swarm | Used to create a rolling update. |
 
 ### Project Management
 ###### Trello and MVP
@@ -111,10 +116,18 @@ When testing the app, each service was tested individually. Along with each serv
 
 ### Jenkins
 
+Docker-compose stage failure
+After being successfully ran once the docker-compose stage of the jenkinsfile would fail. The code for the stage was 'sh "ln -s rafflemania_qa_project_2/docker-compose.yaml building"'. It threw an error because for some reason 'building' has already been used. To counter this the code was changed 'sh "docker-compose build --parallel"', to allow unlimited builds to be successful.
+
+Ansible - Host key verification error
+
 ### Improvements
 
 Story Points - 
 A use story has more influence when the users aren't myself. The best/most usual way to use story points is is a collaborative project, because the chosen story points promote discussion, and multiple perspectives may lead to a consensus. Also having more than 2 user stories would help create a better image of what is wanting to be created
+
+Documentation -
+The documentation was done throughout the entire project with a little start before the project. If most of the documentation was completed before the start of the project, not only would it speed up the project, but would give a better idea of how the overall project would look.
 
 Frontend - 
 The Navigation bar is useless as there is only one webpage for the frontend, it just makes the frontend look presentable. Making the page look presentable without the navbar would have been ideal.
