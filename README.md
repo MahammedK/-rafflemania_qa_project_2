@@ -63,7 +63,7 @@ Red – Must Have (MVP – Minimum Viable Product)
 Orange – Should Have
 Yellow - Could Have
 
-This is due to the tasks included only contains tasks that were a necessary part of the project and those that would improve the project in a major way. There is no tasks that represent Won't Have, as the project was completed with tasks that were always to be included. The could have tasks were only left out due to time constraints.
+This is because the tasks mentioned only include those that were an essential part of the project and those that would significantly improve the project. There are no tasks for the prioritisation of Won't Have, as the project was completed with tasks that were always to be included. Due to time constraints, the tasks that may have been completed were not completed.
 
 ### Risk Assessment
 
