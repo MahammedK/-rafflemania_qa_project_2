@@ -42,9 +42,14 @@ The app I plan to create will be split into 4 services. The frontend will be ser
 
 ### User Stories, Acceptance Criteria and Story Points
 
-To create a vision as to what the application would look like, I used user stories. Being the sole user, the user stories were from my point of view. To understand what a feature requires, an acceptance criterion is attached to the user stories. Story points are a means of calculating how much work it will take to complete a task. PlanningPoker.com is used to decide the story point assigned to a user story. Each user story was given a number depending on complexity using the Fibonacci sequence to calculate the story point.
+To create a vision as to what the application would look like, I used user stories. Being the sole user, the user stories came from my perspective of a user. To understand what a feature requires, an acceptance criterion is attached to the user stories. Story points are a means of calculating how much work it will take to complete a task. PlanningPoker.com is used to decide the story point assigned to a user story. Each user story was given a number depending on complexity using the Fibonacci sequence to calculate the story point.
+
+* As a product owner, I want to be able to produce a working raffle system, so that entrants and gifts can be chosen at random with a story point of 8. Given the user is on the raffle page, when they refresh the page, they can see the raffle is redrawn.
+
+* As a user, I want to be able to see multiple draws, so that entrants I know the draws are randomised with a story point of 5. Given the user is on the raffle page, when they refresh the page, they can see the draw results are different.
 
 ### CI Pipeline
+
 | CI Pipeline | What was done in this project |
 | --- | --- |
 |  |  |
@@ -81,6 +86,7 @@ Risk Assessments are used to ensure a project&#39;s success by evaluating scenar
 | Old PC being used | PC will run really slow | High | High | PC | Only use programs/softwares that are needed | Using a PC with a bigger RAM and a better processor | Keep calm | 09/05/22 |
 | File already existing | Jenkins test failing | High | Low | Mahammed Kassam | Rename file | Create a new file | Rename current file | 11/05/22 |
 | Unsure how to proceed with a task | Time to complete project will be reduced | High | Low | Mahammed Kassam | Start with documentation to give a layout on how to proceed | Same as current control measures - Start with documentation to give a layout on how to proceed | Ask trainer on what they would recommend | 11/05/22 |
+| Tutors unavailable | Time to complete project will be reduced as waiting for help | High | High | Mahammed Kassam | Wait for a tutor to be available | Use resources online for help | Ask before attempting the task, what is required, therefore have an understanding on how to tackle the task | 15/05/22 |
 
 ### Frontend
 The frontend consists of just one page, consisting of the navigation bar that has just the home page on it. The rest of the page consists of the title, statement with objects from services and a refresh button.
@@ -88,22 +94,27 @@ The frontend consists of just one page, consisting of the navigation bar that ha
 Below are screenshots of the frontend, along with different possible outcomes:
 
 1. If service 2 is either 'A, E, I, O, U' or service 3 starts with an 'A'. Service 4 should return 'Airpods'
-    * Service 2 is either 'A, E, I, O, U' and service 3 starts with an 'A'.
-
-    * Service 2 is either 'A, E, I, O, U' and service 3 DOES NOT start with an 'A'.
-
-    * Service 2 IS NOT either 'A, E, I, O, U' and service 3 starts with an 'A'.
 
 2. If service 2 is NOT either 'A, E, I, O, U' or service 3 DOES NOT start with an 'A'. Service 4 should return 'QA CloudAcademy free demo'
 
 ### Testing
+
+When testing the app, each service was tested individually. Along with each service being tested, there was atest for each route. The aim was to get each service test to be above 80%. Below are the test results for each service:
+
+* Results for service 1:
+
+* Results for service 2:
+
+* Results for service 3:
+
+* Results for service 4:
 
 ### Jenkins
 
 ### Improvements
 
 Story Points - 
-A use story has more influence when the users aren't myself. The best/most usual way to use story points is is a collaborative project, because the chosen story points promote discussion, and multiple perspectives may lead to a consensus.
+A use story has more influence when the users aren't myself. The best/most usual way to use story points is is a collaborative project, because the chosen story points promote discussion, and multiple perspectives may lead to a consensus. Also having more than 2 user stories would help create a better image of what is wanting to be created
 
 Frontend - 
 The Navigation bar is useless as there is only one webpage for the frontend, it just makes the frontend look presentable. Making the page look presentable without the navbar would have been ideal.
