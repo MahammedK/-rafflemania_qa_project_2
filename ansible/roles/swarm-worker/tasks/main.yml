@@ -1,5 +1,5 @@
 ---
-# tasks file for swarmworker
+# tasks file for swarm-worker
 
 - name: "Add Worker to the Swarm"
   docker_swarm:
