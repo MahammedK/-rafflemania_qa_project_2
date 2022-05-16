@@ -60,7 +60,7 @@ To create a vision as to what the application would look like, I used user stori
 | pytest | Run tests on each route. |
 | Jenkins | Loaded onto a VM in the cloud. GitHub repository link attached to Jenkins in order to build tool. |
 | Ansible | Used to build and push images along with depolying code. |
-| Docker Swarm | Used to create a rolling update. |
+| Docker Swarm & NGINX | Used to create a rolling update. |
 
 ### Project Management
 ###### Trello and MVP
@@ -69,9 +69,9 @@ To create a vision as to what the application would look like, I used user stori
 
 The Trello board contains three colours, these represent:
 
-Red – Must Have (MVP – Minimum Viable Product)
-Orange – Should Have
-Yellow - Could Have
+* Red – Must Have (MVP – Minimum Viable Product)
+* Orange – Should Have
+* Yellow - Could Have
 
 This is because the tasks mentioned only include those that were an essential part of the project and those that would significantly improve the project. There are no tasks for the prioritisation of Won't Have, as the project was completed with tasks that were always to be included. Due to time constraints, the tasks that may have been completed were not completed.
 
@@ -116,10 +116,19 @@ When testing the app, each service was tested individually. Along with each serv
 
 ### Jenkins
 
-Docker-compose stage failure
-After being successfully ran once the docker-compose stage of the jenkinsfile would fail. The code for the stage was 'sh "ln -s rafflemania_qa_project_2/docker-compose.yaml building"'. It threw an error because for some reason 'building' has already been used. To counter this the code was changed 'sh "docker-compose build --parallel"', to allow unlimited builds to be successful.
+Docker-compose stage
+After being successfully ran once the docker-compose stage of the jenkinsfile would fail. The code for the stage was 'sh "ln -s rafflemania_qa_project_2/docker-compose.yaml building"'. It threw an error because for some reason 'building' has already been used. To counter this the code was changed 'sh "docker-compose build --parallel"', along with adding credentials to allow unlimited builds to be successful.
 
-Ansible - Host key verification error
+Ansible/Deploy stage failure - Host key verification failed.
+This error could not be resolved. Shown below is how I created and used the jenkins ssh-keygen.
+
+In the Jenkins VM I used the sudo su jenkins command to activate the Jenkins user. I attempted to created an ssh-keygen in the .ssh but was unseuccesful, thus created it outside the .ssh folder. This ssh-key's public key would then be inserted into the SSH Key section of both the swarm-manager and swarm worker VM.
+
+In the Jenkinsfile on the main VM, the file route would be as follows:
+
+The same file route would be inserted into the inventory.yaml file:
+
+Error would still not be fixed, thus resulting in the deployment not being ran and unable to move onto the rolling update.
 
 ### Improvements
 
@@ -132,12 +141,20 @@ The documentation was done throughout the entire project with a little start bef
 Frontend - 
 The Navigation bar is useless as there is only one webpage for the frontend, it just makes the frontend look presentable. Making the page look presentable without the navbar would have been ideal.
 
+Ansible - 
+Having more knowledge on Ansible would have helped in the deployment of the project. Using out of work hours to go through more about ansible would have been extremely beneficial. Also reaching out to more trainers would help resolve issues faced.
+
+Other Improvements - 
+* Include an input for service two, so instead of a random letter being used, it could have been a name of an entrant.
+* Have entrants to be able to select what prize they wanted to go for (making a raffle system per prize).
+* Have a database that tracks the prizes given out to specied entrants.
+
 ### Authors
 
 Mahammed Kassam
 
 ### Acknowledgements
 
-Many thanks go to the trainer, Victoria Sacre, for the help, guidance, and patience. The cohort of 22MarEnable1 deserve to be acknowledged for their support and friendly demeanour. Not forgetting Luke Benson, Harry Volker and Adam Gray for being available to answer question and also Earl Gray for the recodings during week 1 through to 5.
+Many thanks go to the trainer, Victoria Sacre, for the help, guidance, and patience. The cohort of 22MarEnable1 deserve to be acknowledged for their support and friendly demeanour. Not forgetting Luke Benson, Harry Volker and Adam Gray for being available to answer question and also Earl Gray for the recodings during weeks 1 through to 5.
 
 Thanks go to getbootstrap for their navbar.
