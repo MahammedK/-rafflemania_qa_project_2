@@ -172,6 +172,13 @@ Error would still not be fixed, thus resulting in the deployment not being ran a
 
 ![AnsError](https://user-images.githubusercontent.com/101266645/168619924-52c51359-86ab-4bb9-8f5f-3978b8806e51.png)
 
+Rolling Update - 
+The rolling update was performed however it was done manually. Images for the frontend were uploaded DockerHub with differences. A swarm was then created and initialised, along with creating a Manager node. A stack was then created for the configuration of first image and then deployed.
+
+
+For the rolling update the docker-compose.yaml file was altered to pull down the new image. This time the frontend will serve a powderblue background. Thereafter updating the service by deploying again.
+
+
 
 ### Improvements
 
@@ -186,6 +193,9 @@ The Navigation bar is useless as there is only one webpage for the frontend, it 
 
 Ansible - 
 Having more knowledge on Ansible would have helped in the deployment of the project. Using out of work hours to go through more about ansible would have been extremely beneficial. Also reaching out to more trainers would help resolve issues faced.
+
+Rolling Update - 
+Providing I had solved the issue for the error 'Host key verification failed'. The webhook that I had set up would have allowed for a rolling update to be performed automatically.
 
 Other Improvements - 
 * Include an input for service two, so instead of a random letter being used, it could have been a name of an entrant.
