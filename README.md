@@ -175,10 +175,11 @@ Error would still not be fixed, thus resulting in the deployment not being ran a
 Rolling Update - 
 The rolling update was performed however it was done manually. Images for the frontend were uploaded DockerHub with differences. A swarm was then created and initialised, along with creating a Manager node. A stack was then created for the configuration of first image and then deployed.
 
+![updt1](https://user-images.githubusercontent.com/101266645/168693864-8527fc57-5b57-4749-ae8e-ae17bb0f5f47.png)
 
 For the rolling update the docker-compose.yaml file was altered to pull down the new image. This time the frontend will serve a powderblue background. Thereafter updating the service by deploying again.
 
-
+![updt2](https://user-images.githubusercontent.com/101266645/168693879-c47cf6a5-0dfa-407a-9563-b9bfa3fba203.png)
 
 ### Improvements
 
