@@ -50,7 +50,7 @@ To create a vision as to what the application would look like, I used user stori
 
 ### CI Pipeline
 
-![CIpipeline](https://user-images.githubusercontent.com/101266645/168616779-eb1f7175-cb20-452c-a007-7a5177465451.png)
+![CIpipeline](https://user-images.githubusercontent.com/101266645/168625591-533c68e6-1865-4743-a3a0-985314a77eb8.png)
 
 | CI Pipeline | What was done in this project |
 | --- | --- |
@@ -65,7 +65,7 @@ To create a vision as to what the application would look like, I used user stori
 ### Project Management
 ###### Trello and MVP
 
-![Trello](https://user-images.githubusercontent.com/101266645/168616816-c0fe3de7-37fa-45d8-bc5c-a8dac34a1840.png)
+![Trello](https://user-images.githubusercontent.com/101266645/168625641-e65017d1-f082-46cf-a5a1-730936bffcc3.png)
 
 The Trello board contains three colours, these represent:
 
@@ -100,12 +100,13 @@ Below are screenshots of the frontend, along with different possible outcomes:
 
 1. If service 2 is either 'A, E, I, O, U' or service 3 starts with an 'A'. Service 4 should return 'Airpods'
 
-![Picture1](https://user-images.githubusercontent.com/101266645/168616960-e834003d-15f9-44c9-8443-107d85518496.png)
-![Picture2](https://user-images.githubusercontent.com/101266645/168617007-831d908a-ad6c-45b3-8f5c-57e590284ecf.png)
+![2A](https://user-images.githubusercontent.com/101266645/168625727-609d8914-b54d-4c1c-a52f-cbdaa090e688.png)
+
+![1E](https://user-images.githubusercontent.com/101266645/168625740-1d62f991-e2ca-42c3-84d8-8b443f6658ae.png)
 
 2. If service 2 is NOT either 'A, E, I, O, U' or service 3 DOES NOT start with an 'A'. Service 4 should return 'QA CloudAcademy free demo'
 
-![Picture4](https://user-images.githubusercontent.com/101266645/168617014-3f4b9d6d-be6d-4df8-9e70-961a6996fd82.png)
+![justQA](https://user-images.githubusercontent.com/101266645/168625797-43896de0-837c-432f-af7c-1d8f5d9053ce.png)
 
 ### Testing
 
@@ -113,19 +114,19 @@ When testing the app, each service was tested individually. Along with each serv
 
 * Results for service 1:
 
-![Picture5](https://user-images.githubusercontent.com/101266645/168617103-8ae2a5ce-ed25-47bf-a108-c200284e6fa1.png)
+![serv1](https://user-images.githubusercontent.com/101266645/168625846-238a60a1-206e-42e3-b95a-f3bd45627bf6.png)
 
 * Results for service 2:
 
-![Picture7](https://user-images.githubusercontent.com/101266645/168617127-cd67be9c-a9e1-430a-84e5-7b51fcb7c392.png)
+![serv2](https://user-images.githubusercontent.com/101266645/168625859-decf429f-1800-4c44-b452-7d9a717edbe9.png)
 
 * Results for service 3:
 
-![Picture9](https://user-images.githubusercontent.com/101266645/168617163-a45c193c-d492-4a2c-a1f1-2026a1845135.png)
+![serv3](https://user-images.githubusercontent.com/101266645/168625869-1b4181d3-aa8f-498e-9585-cda9a39c7cd6.png)
 
 * Results for service 4:
 
-![Picture10](https://user-images.githubusercontent.com/101266645/168617177-d643ba24-4d74-496c-be8c-679771af4f62.png)
+![serv4](https://user-images.githubusercontent.com/101266645/168625877-31de836e-d3bb-47ed-918a-b0f0e267b791.png)
 
 ### Jenkins
 
