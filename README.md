@@ -117,7 +117,7 @@ When testing the app, each service was tested individually. Along with each serv
 ### Jenkins
 
 Docker-compose stage
-After being successfully ran once the docker-compose stage of the jenkinsfile would fail. The code for the stage was 'sh "ln -s rafflemania_qa_project_2/docker-compose.yaml building"'. It threw an error because for some reason 'building' has already been used. To counter this the code was changed 'sh "docker-compose build --parallel"', along with adding credentials to allow unlimited builds to be successful.
+After being successfully ran once the docker-compose stage of the jenkinsfile would fail. The code for the stage was 'sh "ln -s rafflemania_qa_project_2/docker-compose.yaml building"'. It threw an error because for some reason 'building' has already been used. To counter this the code was changed 'sh "docker-compose build --parallel"', to allow unlimited builds to be successful.
 
 Ansible/Deploy stage failure - Host key verification failed.
 This error could not be resolved. Shown below is how I created and used the jenkins ssh-keygen.
