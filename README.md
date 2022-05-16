@@ -50,7 +50,7 @@ To create a vision as to what the application would look like, I used user stori
 
 ### CI Pipeline
 
-
+![CIpipeline](https://user-images.githubusercontent.com/101266645/168625591-533c68e6-1865-4743-a3a0-985314a77eb8.png)
 
 | CI Pipeline | What was done in this project |
 | --- | --- |
@@ -65,7 +65,7 @@ To create a vision as to what the application would look like, I used user stori
 ### Project Management
 ###### Trello and MVP
 
-
+![Trello](https://user-images.githubusercontent.com/101266645/168625641-e65017d1-f082-46cf-a5a1-730936bffcc3.png)
 
 The Trello board contains three colours, these represent:
 
@@ -100,7 +100,13 @@ Below are screenshots of the frontend, along with different possible outcomes:
 
 1. If service 2 is either 'A, E, I, O, U' or service 3 starts with an 'A'. Service 4 should return 'Airpods'
 
+![2A](https://user-images.githubusercontent.com/101266645/168625727-609d8914-b54d-4c1c-a52f-cbdaa090e688.png)
+
+![1E](https://user-images.githubusercontent.com/101266645/168625740-1d62f991-e2ca-42c3-84d8-8b443f6658ae.png)
+
 2. If service 2 is NOT either 'A, E, I, O, U' or service 3 DOES NOT start with an 'A'. Service 4 should return 'QA CloudAcademy free demo'
+
+![justQA](https://user-images.githubusercontent.com/101266645/168625797-43896de0-837c-432f-af7c-1d8f5d9053ce.png)
 
 ### Testing
 
@@ -108,27 +114,64 @@ When testing the app, each service was tested individually. Along with each serv
 
 * Results for service 1:
 
+![serv1](https://user-images.githubusercontent.com/101266645/168625846-238a60a1-206e-42e3-b95a-f3bd45627bf6.png)
+
 * Results for service 2:
+
+![serv2](https://user-images.githubusercontent.com/101266645/168625859-decf429f-1800-4c44-b452-7d9a717edbe9.png)
 
 * Results for service 3:
 
+![serv3](https://user-images.githubusercontent.com/101266645/168625869-1b4181d3-aa8f-498e-9585-cda9a39c7cd6.png)
+
 * Results for service 4:
+
+![serv4](https://user-images.githubusercontent.com/101266645/168625877-31de836e-d3bb-47ed-918a-b0f0e267b791.png)
 
 ### Jenkins
 
 Docker-compose stage
 After being successfully ran once the docker-compose stage of the jenkinsfile would fail. The code for the stage was 'sh "ln -s rafflemania_qa_project_2/docker-compose.yaml building"'. It threw an error because for some reason 'building' has already been used. To counter this the code was changed 'sh "docker-compose build --parallel"', to allow unlimited builds to be successful.
 
+![Jenk0](https://user-images.githubusercontent.com/101266645/168618347-135f381c-880c-46a6-9da8-28c29844f4b9.png)
+
+* Results for service 1:
+
+![Jenk1](https://user-images.githubusercontent.com/101266645/168618368-ad3357ad-b4eb-4b79-88b4-5ede78ee115a.png)
+
+* Results for service 2:
+
+![Jenk2](https://user-images.githubusercontent.com/101266645/168618392-7357307b-4299-4925-a7d2-dd87a13ea2e4.png)
+
+* Results for service 3:
+
+![Jenk3](https://user-images.githubusercontent.com/101266645/168618413-0e112d61-cce7-4cc0-9083-6f430aae07fd.png)
+
+* Results for service 4:
+
+![Jenk4](https://user-images.githubusercontent.com/101266645/168618427-1aa9de15-6f68-462c-bac5-70be33ede87c.png)
+
 Ansible/Deploy stage failure - Host key verification failed.
 This error could not be resolved. Shown below is how I created and used the jenkins ssh-keygen.
 
+![ssh](https://user-images.githubusercontent.com/101266645/168624111-35721d7c-6715-424c-a392-244fe788d0e4.png)
+
 In the Jenkins VM I used the sudo su jenkins command to activate the Jenkins user. I attempted to created an ssh-keygen in the .ssh but was unseuccesful, thus created it outside the .ssh folder. This ssh-key's public key would then be inserted into the SSH Key section of both the swarm-manager and swarm worker VM.
 
-In the Jenkinsfile on the main VM, the file route would be as follows:
+In the Jenkinsfile on the main VM, the file route is as follows:
+
+![Jenkinsfilecode](https://user-images.githubusercontent.com/101266645/168619820-a6b56616-f9b9-4e15-9f13-ecf5c6eb0ad3.png)
 
 The same file route would be inserted into the inventory.yaml file:
 
+![Inventoryyamlcode](https://user-images.githubusercontent.com/101266645/168619843-e32c6948-ca17-44c5-8fcc-a8f4b9bf7f7c.png)
+
 Error would still not be fixed, thus resulting in the deployment not being ran and unable to move onto the rolling update.
+
+![AnsPipe](https://user-images.githubusercontent.com/101266645/168619902-74fa962a-b93d-42af-96cf-998277afe0bb.png)
+
+![AnsError](https://user-images.githubusercontent.com/101266645/168619924-52c51359-86ab-4bb9-8f5f-3978b8806e51.png)
+
 
 ### Improvements
 
