@@ -172,6 +172,12 @@ Error would still not be fixed, thus resulting in the deployment not being ran a
 
 ![AnsError](https://user-images.githubusercontent.com/101266645/168619924-52c51359-86ab-4bb9-8f5f-3978b8806e51.png)
 
+To try and combat the error I tried to connect manually first (i.e. ssh into jenkins, switch user to jenkins and then run 'ssh jenkins@swarm-manager') in order to confirm that I definitely want to connect, this failed to connect.
+
+![Fail](https://user-images.githubusercontent.com/101266645/168770105-de5a0cce-9647-4f34-ac6c-c89beb44041f.png)
+
+When i do 'ssh -i ansible_key swarm-manager', this connects but when i build is ran the same error 'Host key verification failed' is shown.
+
 Rolling Update - 
 The rolling update was performed however it was done manually. Images for the frontend were uploaded DockerHub with differences. A swarm was then created and initialised, along with creating a Manager node. A stack was then created for the configuration of first image and then deployed.
 
